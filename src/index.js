@@ -10,14 +10,14 @@ import Header from './Header'
 
 class App extends React.Component{
     render(){
-        console.log(location.pathname);
+        // console.log(location.pathname);
         return(
             <Router>
                 {location.pathname === '/login' || <Header/>}
-                <Route exact path="/login" component={Login}/>
+                <Route exact path="/" component={Home}/>
                 <Route exact path="/transaction" component={Transfer}/>
-                <Route exact path="/home" component={Home}/>
                 <Route exact path="/history" component={History}/>
+                <Route exact path="/login" component={Login}/>
             </Router>
         )
     }
