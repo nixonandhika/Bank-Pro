@@ -1,0 +1,170 @@
+body {
+    font-family: 'Segoe UI', 'Arial', 'Helvetica', 'Sans-serif';
+    margin: 0;
+}
+
+img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.banner {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 30% auto;
+    grid-template-rows: 80px;
+    height: 80px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10%;
+    width: inherit;
+}
+
+.logo-img { 
+    cursor: pointer;
+    width: 100px;
+}
+
+.logo-text {
+    cursor: pointer;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.info {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar {
+    background-color: rgb(42, 68, 86, 0.9);
+    color: white;
+    display: grid;
+    font-size: 1.3rem;
+    font-weight: bold;
+    grid-template-areas: 'a b c d e f g h';
+    z-index: 2;
+}
+
+@media only screen and (min-width: 965px) {
+    #com-name {
+        color: #2A4456;
+        cursor: pointer;
+        font-size: 2rem;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+}
+
+@media only screen and (max-width: 964px) {
+    #com-name {
+        color: #2A4456;
+        cursor: pointer;
+        font-size: 3vw;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+}
+
+@media only screen and (min-width: 1070px) {
+    #com-motto { 
+        color: #2A4456;
+        cursor: pointer;
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 1069px) {
+    #com-motto { 
+        color: #2A4456;
+        cursor: pointer;
+        font-size: 1.25vw;
+    }
+}
+
+#phone-wrapper {
+    margin-top: 5px;
+    margin-right: 20px;
+    width: 40px;
+}
+
+#phone-icon {
+    margin-top: 20px;
+}
+
+#phone-num { 
+    color: #2A4456;
+    font-size: 1.1rem;
+    padding-top: 12px;
+    margin-right: 20px;
+}
+
+#search-wrapper {
+    margin-top: 5px;
+    margin-right: 20px;
+    width: 70px;
+}
+
+#login-box {
+    background-color: #ADC3CE;
+    color: #2A4456;
+    cursor: pointer;
+    font-size: 2rem;
+    text-align: center;
+    padding:20px;
+    width: 165px;
+}
+
+#register-box {
+    background-color: #DDDDDD;
+    color: #2A4456;
+    cursor: pointer;
+    font-size: 2rem;
+    text-align: center;
+    width: 190px;
+}
+
+#register-text {
+    margin: 0;
+    padding-top: 20px;
+}
+
+#product {
+    cursor: pointer;
+    grid-area: b;
+    padding-left: 10%;
+}
+
+#services {
+    cursor: pointer;
+    grid-area: c;
+}
+
+#news {
+    cursor: pointer;
+    grid-area: d;
+}
+
+#ebanking {
+    cursor: pointer;
+    grid-area: e;
+}
+
+#about {
+    cursor: pointer;
+    grid-area: g;
+}
+
+#contact {
+    cursor: pointer;
+    grid-area: h;
+}
+
+#homepage-pic {
+    z-index: 1;
+}
