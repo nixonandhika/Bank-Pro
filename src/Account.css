@@ -1,0 +1,29 @@
+.account-body {
+    color: #2A4456;
+    margin-top: 40px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.welcome {
+    text-align: center;
+    font-size: 3vw;
+    font-weight: bold;
+}
+
+.account-info {
+    margin-top: 100px;
+}
+
+.info-text {
+    display: grid;
+    grid-template-columns: 30% 5% auto;
+    font-size: 2rem;
+    margin-top: 40px;
+    margin-left: 50px;
+}
+
+#data-text {
+    font-size: 2rem;
+    text-decoration: underline;
+}

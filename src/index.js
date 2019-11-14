@@ -5,7 +5,9 @@ import Login from './Login';
 import Home from './Home';
 import Transfer from './Transfer';
 import History from './History';
-import Header from './Header'
+import Header from './Header';
+import Account from './Account';
+import './bootstrap.min.css';
 
 
 class App extends React.Component{
@@ -13,11 +15,12 @@ class App extends React.Component{
         // console.log(location.pathname);
         return(
             <Router>
-                {window.location.pathname === '/login' || <Header/>}
-                <Route exact path="/" component={Home}/>
-                <Route exact path="/transaction" component={Transfer}/>
-                <Route exact path="/history" component={History}/>
-                <Route exact path="/login" component={Login}/>
+                {/* {location.pathname === '/login' || <Header/>} */}
+                <Route exact path='/' component={Home}/>
+                <Route exact path='/transfer' component={Transfer}/>
+                <Route exact path='/history' component={History}/>
+                <Route exact path='/login' component={Login}/>
+                <Route exact path='/account' component={Account}/>
             </Router>
         )
     }

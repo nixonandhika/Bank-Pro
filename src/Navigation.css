@@ -1,0 +1,88 @@
+body {
+    background-color: white;
+    /* background-color: #E7F1FF; */
+    font-family: 'Segoe UI', 'Arial', 'Helvetica', 'Sans-serif';
+    margin: 0;
+}
+
+img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.account-navigation {
+    background-color: #2A4456;
+    display: grid;
+    grid-template-columns: 30% auto;
+    grid-template-rows: 80px;
+    height: 80px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10%;
+    width: inherit;
+}
+
+.logo-img { 
+    cursor: pointer;
+    width: 100px;
+}
+
+.logo-text {
+    cursor: pointer;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.link {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.box {
+    cursor: pointer;
+    font-size: 2rem;
+    text-align: center;
+    padding: 20px;
+    width: 190px;
+}
+
+@media only screen and (min-width: 965px) {
+    #account-com-name {
+        color: white;
+        cursor: pointer;
+        font-size: 2rem;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+}
+
+@media only screen and (max-width: 964px) {
+    #account-com-name {
+        color: white;
+        cursor: pointer;
+        font-size: 3vw;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+}
+
+@media only screen and (min-width: 1070px) {
+    #account-com-motto { 
+        color: white;
+        cursor: pointer;
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 1069px) {
+    #account-com-motto { 
+        color: white;
+        cursor: pointer;
+        font-size: 1.25vw;
+    }
+}
