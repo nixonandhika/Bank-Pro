@@ -11,24 +11,24 @@ export class Header extends React.Component {
     //   console.log('test');
       return(
           <div>
-            <AppBar position="static" >
+            <AppBar  sytle={{width:'100%',backgroundColor:'white','position':'static','padding':'0px'}}>
                 <Toolbar variant="dense">
-                <Grid item sm={9} xs={3}>
+                <Grid item sm={8} xs={3}>
                     <Typography variant="h6" color="inherit">
                         <b>BankPro</b>
                     </Typography>
                 </Grid>
-                <Grid item xs={2}>
-                  <Link style={{color:'white','text-decoration': 'none','float':'right'}} to="/">Home</Link>
+                <Grid item xs={2} sm={1}>
+                  <Link style={{color:'white','textDecoration': 'none','float':'right'}} to="/">Home</Link>
                 </Grid>
-                <Grid item xs={2}>
-                  <Link style={{color:'white','text-decoration': 'none','float':'right'}} to="/transaction">Transaction</Link>
+                <Grid item xs={3} sm={1}>
+                  <Link style={{color:'white','textDecoration': 'none','float':'right'}} to="/transaction">Transaction</Link>
                 </Grid>
-                <Grid item xs={2}>
-                  <Link style={{color:'white','text-decoration': 'none','float':'right'}} to="/history">History</Link>
+                <Grid item xs={2} sm={1}>
+                  <Link style={{color:'white','textDecoration': 'none','float':'right'}} to="/history">History</Link>
                 </Grid>
-                <Grid item xs={2}>
-                  <div style={{color:'white','text-decoration': 'none','float':'right'}} >Logout</div>
+                <Grid item xs={2} sm={1}>
+                  <div style={{color:'white','textDecoration': 'none','float':'right'}} >Logout</div>
                 </Grid>
                 </Toolbar>
             </AppBar>

@@ -13,7 +13,7 @@ class App extends React.Component{
         // console.log(location.pathname);
         return(
             <Router>
-                {location.pathname === '/login' || <Header/>}
+                {window.location.pathname === '/login' || <Header/>}
                 <Route exact path="/" component={Home}/>
                 <Route exact path="/transaction" component={Transfer}/>
                 <Route exact path="/history" component={History}/>
