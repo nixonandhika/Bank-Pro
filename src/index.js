@@ -7,6 +7,7 @@ import Transfer from './Transfer';
 import History from './History';
 import Header from './Header';
 import Account from './Account';
+import './bootstrap.min.css';
 
 
 class App extends React.Component{

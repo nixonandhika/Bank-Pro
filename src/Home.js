@@ -1,8 +1,8 @@
 import React from 'react';
-import HomePic from '../public/homepage-pic.png';
-import Logo from '../public/logo.png';
-import Phone from '../public/call_icon.png';
-import Search from '../public/search_icon.png';
+import HomePic from './public/homepage-pic.png';
+import Logo from './public/logo.png';
+import Phone from './public/call_icon.png';
+import Search from './public/search_icon.png';
 import './Home.css';
 import {Link} from 'react-router-dom';
 
@@ -38,7 +38,8 @@ function Banner() {
         </div>
         <div class='info'>
             <div id='phone-wrapper'>
-                <img id='phone-icon' src={Phone} alt='phone-icon'/>                    
+                <img id='phone-icon' src={Phone} alt='phone-icon'/>    
+                {/* <img id='phone-icon' src={Phone} alt='phone-icon'/>                     */}
             </div>
             <p id='phone-num'>(555) - 1234 5678</p>
             <div id='search-wrapper'>

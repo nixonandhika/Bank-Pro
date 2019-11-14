@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from '../public/logo-white.png';
+import Logo from './public/logo-white.png';
 import './Navigation.css';
 import {Link} from 'react-router-dom';
 
