@@ -1,23 +1,9 @@
-# Node docker image on which our code would run
-image: node:10.15.2
-
-#This command is run before all the jobs
-before_script:
-  - npm install
-
 stages:
-  - test
+  - lint
 
-# lint and test are two different jobs in the same stage.
-# This allows us to run these two in parallel and making build faster
 
-# Job 1:
 lint:
-  stage: test
-  script:
-    - npm run lint
-# Job 2:
-# test:
-#   stage: test
-#   script:
-#     - npm run test
+    stage: lint
+    script:
+        - echo "run lint"
+        - npm run lint
