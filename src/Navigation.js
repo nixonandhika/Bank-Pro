@@ -6,38 +6,38 @@ import {Link} from 'react-router-dom';
 export class Navigation extends React.Component {
     render() {
         return (
-            <div class='account-navigation'>
-                <div class='logo'>
+            <div className='account-navigation'>
+                <div className='logo'>
                     <Link to='/login'>
-                    <div class='logo-img'>
+                    <div className='logo-img'>
                         <img id='logo-pic' src={Logo} alt='bank-logo'/>
                     </div>
                     </Link>
                     <Link style={{'textDecoration': 'none'}}to='/login'>
-                    <div class='logo-text'>
+                    <div className='logo-text'>
                         <label id='account-com-name'>Bank Pro</label>
                         <label id='account-com-motto'>Your #1 Partner</label>
                     </div>
                     </Link>
                 </div>
-                <div class='link'>
+                <div className='link'>
                     <Link style={{'text-decoration': 'none'}} to='/account'>
-                        <div class='box'>
+                        <div className='box'>
                             <Link style={{color:'white','text-decoration': 'none'}} to='/account'>Account</Link>
                         </div>
                     </Link>
                     <Link style={{'text-decoration': 'none'}} to='/transfer'>
-                        <div class='box'>
+                        <div className='box'>
                             <Link style={{color:'white','text-decoration': 'none'}} to='/transfer'>Transfer</Link>
                         </div>
                     </Link>
                     <Link style={{'text-decoration': 'none'}} to='/history'>
-                        <div class='box'>
+                        <div className='box'>
                             <Link style={{color:'white','text-decoration': 'none'}} to='/history'>History</Link>
                         </div>
                     </Link>
                     <Link style={{'text-decoration': 'none'}} to='/'>
-                        <div class='box'>
+                        <div className='box'>
                             <Link style={{color:'white','text-decoration': 'none'}} to='/'>Logout</Link>
                         </div>
                     </Link>

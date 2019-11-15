@@ -12,7 +12,7 @@ import {Link} from 'react-router-dom';
 export class Home extends React.Component {
     render (){
         return(
-            <div class='home'>
+            <div className='home'>
                 <Banner/>
                 <Navigation/>
             </div>
@@ -22,21 +22,21 @@ export class Home extends React.Component {
 
 function Banner() {
     return (
-    <div class='banner'>
-        <div class='logo'>
+    <div className='banner'>
+        <div className='logo'>
             <Link to='/login'>
-            <div class='logo-img'>
+            <div className='logo-img'>
                 <img id='logo-pic' src={Logo} alt='bank-logo'/>
             </div>
             </Link>
             <Link style={{'textDecoration': 'none'}}to='/login'>
-            <div class='logo-text'>
+            <div className='logo-text'>
                 <label id='com-name'>Bank Pro</label>
                 <label id='com-motto'>Your #1 Partner</label>
             </div>
             </Link>
         </div>
-        <div class='info'>
+        <div className='info'>
             <div id='phone-wrapper'>
                 <img id='phone-icon' src={Phone} alt='phone-icon'/>    
                 {/* <img id='phone-icon' src={Phone} alt='phone-icon'/>                     */}
@@ -59,7 +59,7 @@ function Banner() {
 function Navigation() {
     return(
         <div>
-            <div class='navbar'>
+            <div className='navbar'>
                 <p id='product'>Product</p>
                 <p id='services'>Services</p>
                 <p id='news'>News</p>

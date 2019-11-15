@@ -5,7 +5,6 @@ import Login from './Login';
 import Home from './Home';
 import Transfer from './Transfer';
 import History from './History';
-import Header from './Header';
 import Account from './Account';
 import './bootstrap.min.css';
 
