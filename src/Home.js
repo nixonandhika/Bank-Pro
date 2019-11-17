@@ -46,7 +46,7 @@ function Banner() {
                 <img id='search-icon' src={Search} alt='search-icon'/>
             </div>
             <div id='login-box'>
-                <Link style={{color:'#2A4456','text-decoration': 'none'}} to='/account'>Login</Link>
+                <Link style={{color:'#2A4456','text-decoration': 'none'}} to='/login'>Login</Link>
             </div>
             <div id='register-box'>
                 <p id='register-text'>Join Us</p>

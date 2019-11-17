@@ -28,7 +28,7 @@ export class Header extends React.Component {
                   <Link style={{color:'white','textDecoration': 'none','float':'right'}} to='/history'>History</Link>
                 </Grid>
                 <Grid item xs={2}>
-                  <div style={{color:'white','textDecoration': 'none','float':'right'}} >Logout</div>
+                  <Link style={{color:'white','textDecoration': 'none','float':'right'}} to='/login'>Logout</Link>
                 </Grid>
                 </Toolbar>
             </AppBar>

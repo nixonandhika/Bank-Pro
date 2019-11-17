@@ -1,0 +1,60 @@
+.logo-bank {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8%;
+}
+
+.logo-img {
+    cursor: pointer;
+    width: 100px;
+    border: 1px;
+    margin-right: 5%;
+}
+
+#bankpro-text {
+    color: #2A4456;
+    text-align: center;
+    font-size: 5vw;
+    font-weight: bold;
+}
+/* 
+@media only screen and (max-width: 964px) {
+    #account-com-name {
+        color: #2A4456;
+        cursor: pointer;
+        font-size: 3vw;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+} */
+
+button {
+    border: none;
+    border-radius: 5px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.target {
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 2rem;
+    margin-top: 50px;
+    padding-left: 10px;
+    height: 50px;
+    width: 60%;
+}
+
+#login-button {
+    background-color: #5c7f96;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 40px;
+    height: 60px;
+    width: 60%;
+}
