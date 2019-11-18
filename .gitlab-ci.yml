@@ -7,6 +7,7 @@ default:
 
 stages:
   - lint
+  - deploy
 
 
 lint:
@@ -14,3 +15,15 @@ lint:
     script:
         - echo "run lint"
         - npm run lint
+
+deploy:
+    stage: deploy
+    script:
+        - sudo su
+        - pkill -f node
+        - rm -rf /home/ubuntu/bank-pro
+        - cd ~
+        - git clone git@gitlab.informatika.org:if3110-2019-02-k02-12/bank-pro.git
+        - cd bank-pro
+        - npm install 
+        - npm run start
