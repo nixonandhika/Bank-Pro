@@ -1,3 +1,8 @@
+default:
+  before_script:
+    - echo "install"
+    - npm install
+
 stages:
   - lint
 
