@@ -19,7 +19,6 @@ lint:
 deploy:
     stage: deploy
     script:
-        - sudo su
         - pkill -f node
         - rm -rf /home/ubuntu/bank-pro
         - cd ~
