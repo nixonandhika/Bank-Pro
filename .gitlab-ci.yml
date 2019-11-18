@@ -1,6 +1,8 @@
 default:
   before_script:
     - echo "install"
+    - pwd
+    - whoami
     - npm install
 
 stages:
