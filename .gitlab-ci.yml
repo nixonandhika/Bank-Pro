@@ -3,7 +3,6 @@ default:
     - echo "install"
     - pwd
     - whoami
-    - npm install
 
 stages:
   - lint
@@ -13,6 +12,8 @@ stages:
 lint:
     stage: lint
     script:
+        - echo "install"
+        - npm install
         - echo "run lint"
         - npm run lint
 
