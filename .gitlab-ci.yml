@@ -20,9 +20,7 @@ lint:
 deploy:
     stage: deploy
     script:
-        - echo '' | sudo -S rm -rf /home/ubuntu/bank-pro
-        - cd ~
-        - git clone git@gitlab.informatika.org:if3110-2019-02-k02-12/bank-pro.git
-        - cd bank-pro
+        - cd ~/bank-pro
+        - git pull origin dev
         - npm install 
         - npm run start
