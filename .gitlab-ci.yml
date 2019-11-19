@@ -22,7 +22,7 @@ deploy:
     script:
         - cd /home/ubuntu
         - rm -rf bank-pro/
-        - git clone git@gitlab.informatika.org:if3110-2019-02-k02-12/bank-pro.git
+        - sudo git clone git@gitlab.informatika.org:if3110-2019-02-k02-12/bank-pro.git
         - cd bank-pro/
-        - npm install 
-        - npm run start
+        - sudo npm install 
+        - sudo npm run start
