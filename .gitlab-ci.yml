@@ -25,4 +25,7 @@ deploy:
         - git clone git@gitlab.informatika.org:if3110-2019-02-k02-12/bank-pro.git
         - cd bank-pro/
         - npm install 
-        - npm run start
+        - npm run build
+        - sudo rm -rf /var/www/html/bank-pro
+        - sudo mkdir /var/www/html/bank-pro
+        - sudo cp -ir build/. /var/www/html/bank-pro/
