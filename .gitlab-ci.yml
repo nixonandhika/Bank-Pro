@@ -1,8 +1,8 @@
-default:
-  before_script:
-    - echo "install"
-    - pwd
-    - whoami
+# default:
+#   before_script:
+#     - echo "install"
+#     - pwd
+#     - whoami
 
 stages:
   - lint
@@ -21,6 +21,8 @@ deploy:
     stage: deploy
     script:
         - sudo -i -u ubuntu
+        - whoami
+        - pwd
         - rm -rf bank-pro/
         - git clone git@gitlab.informatika.org:if3110-2019-02-k02-12/bank-pro.git
         - cd bank-pro/
