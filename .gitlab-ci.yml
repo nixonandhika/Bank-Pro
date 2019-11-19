@@ -20,7 +20,7 @@ lint:
 deploy:
     stage: deploy
     script:
-        - cd ~/bank-pro
+        - cd /home/ubuntu/bank-pro
         - git pull origin dev
         - npm install 
         - npm run start
