@@ -26,6 +26,5 @@ deploy:
         - cd bank-pro/
         - npm install 
         - npm run build
-        - sudo rm -rf /var/www/html/bank-pro
-        - sudo mkdir /var/www/html/bank-pro
-        - sudo cp -ir build/. /var/www/html/bank-pro/
+        - forever stopall
+        - forever start -c "serve -s" build/
