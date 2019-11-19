@@ -28,4 +28,3 @@ deploy:
         - npm run build
         - forever stopall
         - forever start -c "serve -s" ~/bank-pro/build/
-        - forever start ~/ws-transaksi/index.js
