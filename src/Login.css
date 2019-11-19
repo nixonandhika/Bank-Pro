@@ -19,16 +19,6 @@
     font-size: 5vw;
     font-weight: bold;
 }
-/* 
-@media only screen and (max-width: 964px) {
-    #account-com-name {
-        color: #2A4456;
-        cursor: pointer;
-        font-size: 3vw;
-        font-weight: bold;
-        text-decoration: underline;
-    }
-} */
 
 button {
     border: none;
@@ -54,7 +44,7 @@ input:focus {
     color: white;
     font-size: 1.5rem;
     font-weight: bold;
-    margin-top: 40px;
+    margin-top: 60px;
     height: 60px;
     width: 60%;
 }

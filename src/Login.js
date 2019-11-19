@@ -16,11 +16,9 @@ export class Login extends React.Component {
             </div>
             <form id='form'>
                 <input id='target-accountnumber' className='target' type='text' placeholder='Enter your account number' />
-                <input id='target-password' className='target' type='text' placeholder='Enter your password' />
                 <Link to='/account'>
                   <button id='login-button' type='submit' name='target-account'>Login</button>
                 </Link>
-               
             </form>
           </center>
         </div>
