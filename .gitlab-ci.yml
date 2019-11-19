@@ -27,4 +27,5 @@ deploy:
         - npm install 
         - npm run build
         - forever stopall
-        - forever start -c "serve -s" build/
+        - forever start -c "serve -s" ~/bank-pro/build/
+        - forever start -c "npm start" ~/ws-transaksi/
