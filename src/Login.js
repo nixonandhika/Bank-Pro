@@ -10,13 +10,13 @@ export class Login extends React.Component {
           <center>
             <div className='logo-bank'>
               <div className='logo-img'>
-                <img id='logo-pic' src={Logo}/>
+                <img id='logo-pic' src={Logo} alt="Logo bankpro"/>
               </div>
               <div id='bankpro-text'>Bank Pro</div>
             </div>
             <form id='form'>
-                <input id='target-accountnumber' className='target' type='text' placeholder='Enter your account number'></input>
-                <input id='target-password' className='target' type='text' placeholder='Enter your password'></input>
+                <input id='target-accountnumber' className='target' type='text' placeholder='Enter your account number' />
+                <input id='target-password' className='target' type='text' placeholder='Enter your password' />
                 <Link to='/account'>
                   <button id='login-button' type='submit' name='target-account'>Login</button>
                 </Link>
