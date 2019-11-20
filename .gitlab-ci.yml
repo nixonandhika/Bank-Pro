@@ -22,7 +22,7 @@ test:
   stage: test
   script:
     - echo "test"
-    - npm run test
+    - npm run test -u
     
 deploy:
   stage: deploy
