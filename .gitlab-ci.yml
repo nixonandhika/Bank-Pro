@@ -1,7 +1,9 @@
-# only:    
-#   - dev
-#   - master
-
+cache:
+  untracked: true
+  key: "$CI_BUILD_REF_NAME"
+  paths:
+    - node_modules/
+    
 stages:
   - lint
   - test
@@ -24,6 +26,9 @@ test:
     
 deploy:
   stage: deploy
+  only:
+  - master
+  - dev
   script:
     - cd ~
     - rm -rf bank-pro/
