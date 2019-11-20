@@ -1,11 +1,6 @@
-# default:
-#   before_script:
-#     - echo "install"
-#     - pwd
-#     - whoami
-only:    
-  - dev
-  - master
+# only:    
+#   - dev
+#   - master
 
 stages:
   - lint
@@ -26,6 +21,7 @@ test:
   script:
     - echo "test"
     - npm run test
+    
 deploy:
   stage: deploy
   script:
