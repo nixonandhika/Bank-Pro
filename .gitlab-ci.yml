@@ -3,28 +3,37 @@
 #     - echo "install"
 #     - pwd
 #     - whoami
+only:    
+  - dev
+  - master
 
 stages:
   - lint
+  - test
   - deploy
 
 
 lint:
-    stage: lint
-    script:
-        - echo "install"
-        - npm install
-        - echo "run lint"
-        - npm run lint
+  stage: lint
+  script:
+    - echo "install"
+    - npm install
+    - echo "run lint"
+    - npm run lint
 
+test:
+  stage: test
+  script:
+    - echo "test"
+    - npm run test
 deploy:
-    stage: deploy
-    script:
-        - cd ~
-        - rm -rf bank-pro/
-        - git clone git@gitlab.informatika.org:if3110-2019-02-k02-12/bank-pro.git
-        - cd bank-pro/
-        - npm install 
-        - npm run build
-        - forever stopall
-        - forever start -c "serve -s" ~/bank-pro/build/
+  stage: deploy
+  script:
+    - cd ~
+    - rm -rf bank-pro/
+    - git clone git@gitlab.informatika.org:if3110-2019-02-k02-12/bank-pro.git
+    - cd bank-pro/
+    - npm install 
+    - npm run build
+    - forever stopall
+    - forever start -c "serve -s" ~/bank-pro/build/

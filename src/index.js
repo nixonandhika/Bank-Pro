@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
-import Login from './Login';
-import Home from './Home';
-import Transfer from './Transfer';
-import History from './History';
-import Account from './Account';
+import Login from './Component/Login/Login';
+import Home from './Component/Home/Home';
+import Transfer from './Component/Transfer/Transfer';
+import History from './Component/History/History';
+import Account from './Component/Account/Account';
+import Navigation from './Component/Navigation/Navigation'
 import './bootstrap.min.css';
 
 
@@ -14,7 +15,7 @@ class App extends React.Component{
         // console.log(location.pathname);
         return(
             <Router>
-                {/* {location.pathname === '/login' || <Header/>} */}
+                {window.location.pathname === '/login' || window.location.pathname === '/' || <Navigation/>}
                 <Route exact path='/' component={Home}/>
                 <Route exact path='/transfer' component={Transfer}/>
                 <Route exact path='/history' component={History}/>

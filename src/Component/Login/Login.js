@@ -1,6 +1,6 @@
 import React from 'react';
-import Logo from './public/logo.png';
-import {Link} from 'react-router-dom';
+import Logo from '../../public/logo.png';
+import {a} from 'react-router-dom';
 import './Login.css';
 
 export class Login extends React.Component {
@@ -16,9 +16,9 @@ export class Login extends React.Component {
             </div>
             <form id='form'>
                 <input id='target-accountnumber' className='target' type='text' placeholder='Enter your account number' />
-                <Link to='/account'>
+                <form action='/account' method='GET'>
                   <button id='login-button' type='submit' name='target-account'>Login</button>
-                </Link>
+                </form>
             </form>
           </center>
         </div>

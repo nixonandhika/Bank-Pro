@@ -57,7 +57,7 @@ img {
         cursor: pointer;
         font-size: 2rem;
         font-weight: bold;
-        text-decoration: underline;
+        textDecoration: underline;
     }
 }
 
@@ -67,7 +67,7 @@ img {
         cursor: pointer;
         font-size: 3vw;
         font-weight: bold;
-        text-decoration: underline;
+        textDecoration: underline;
     }
 }
 

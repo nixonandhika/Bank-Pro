@@ -6,7 +6,9 @@
   "dependencies": {
     "@material-ui/core": "^4.5.2",
     "@material-ui/styles": "^4.5.2",
+    "axios": "^0.19.0",
     "bootstrap": "^4.3.1",
+    "dom-parser": "^0.1.6",
     "jquery": "^3.4.1",
     "react": "^16.11.0",
     "react-bootstrap": "^1.0.0-beta.14",
@@ -15,19 +17,22 @@
     "react-router": "^5.1.2",
     "react-router-dom": "^5.1.2",
     "react-scripts": "^3.2.0",
-    "typescript": "^3.7.2"
+    "xml2js": "^0.4.22"
   },
   "devDependencies": {
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.15.1",
     "eslint": "^6.6.0",
-    "eslint-plugin-react": "^7.16.0"
+    "eslint-plugin-react": "^7.16.0",
+    "typescript": "^3.7.2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "lint": "eslint src/*.js",
-    "lint-fix": "eslint --fix src/*.js"
+    "lint": "eslint src/Component/**/*.js",
+    "lint-fix": "eslint --fix src/Component/**/*.js"
   },
   "browserslist": {
     "production": [
