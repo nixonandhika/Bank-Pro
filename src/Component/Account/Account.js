@@ -1,6 +1,5 @@
 import React from 'react';
 // import Logo from './public/logo-white.png';
-import Navigation from './Navigation';
 import './Account.css';
 // import {Link} from 'react-router-dom';
 
@@ -8,7 +7,6 @@ export class Account extends React.Component {
     render (){
         return(
             <div className='account'>
-                <Navigation/>
                 <div className='account-body'>
                     <div className='welcome'>Welcome to Bank Pro!</div>
                     <div className='welcome'>Convenience at its Best</div>

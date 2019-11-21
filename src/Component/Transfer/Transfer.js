@@ -1,5 +1,4 @@
 import React from 'react';
-import Navigation from './Navigation';
 import './Transfer.css';
 
 
@@ -7,7 +6,6 @@ export class Transfer extends React.Component {
     render (){
         return(
             <div className='transfer'>
-                <Navigation/>
                 <div className='transfer-body'>
                     <div id='transfer-text'>Transfer</div>
                     <form id='form'>

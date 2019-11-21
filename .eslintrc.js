@@ -27,5 +27,15 @@ module.exports = {
         "react": {
             "version": "detect"
         }
-    }
+    },
+    "overrides": [
+        {
+          "files": [
+            "src/Component/**/*.test.js"
+          ],
+          "env": {
+            "jest": true
+          }
+        }
+      ]
 };

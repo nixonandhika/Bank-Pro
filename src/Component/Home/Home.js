@@ -1,10 +1,10 @@
 import React from 'react';
-import HomePic from './public/homepage-pic.png';
-import Logo from './public/logo.png';
-import Phone from './public/call_icon.png';
-import Search from './public/search_icon.png';
+import HomePic from '../../public/homepage-pic.png';
+import Logo from '../../public/logo.png';
+import Phone from '../../public/call_icon.png';
+import Search from '../../public/search_icon.png';
 import './Home.css';
-import {Link} from 'react-router-dom';
+import {a} from 'react-router-dom';
 
 
 
@@ -24,17 +24,17 @@ function Banner() {
     return (
     <div className='banner'>
         <div className='logo'>
-            <Link to='/login'>
+            <a href='/login'>
             <div className='logo-img'>
                 <img id='logo-pic' src={Logo} alt='bank-logo'/>
             </div>
-            </Link>
-            <Link style={{'textDecoration': 'none'}}to='/login'>
+            </a>
+            <a style={{'textDecoration': 'none'}}href='/login'>
             <div className='logo-text'>
                 <label id='com-name'>Bank Pro</label>
                 <label id='com-motto'>Your #1 Partner</label>
             </div>
-            </Link>
+            </a>
         </div>
         <div className='info'>
             <div id='phone-wrapper'>
@@ -46,7 +46,7 @@ function Banner() {
                 <img id='search-icon' src={Search} alt='search-icon'/>
             </div>
             <div id='login-box'>
-                <Link style={{color:'#2A4456','text-decoration': 'none'}} to='/login'>Login</Link>
+                <a style={{color:'#2A4456','textDecoration': 'none'}} href='/login'>Login</a>
             </div>
             <div id='register-box'>
                 <p id='register-text'>Join Us</p>
