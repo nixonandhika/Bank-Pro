@@ -1,11 +1,12 @@
 import React from 'react';
 import HomePic from '../../public/homepage-pic.png';
 import Logo from '../../public/logo.png';
-import Phone from '../../public/call_icon.png';
-import Search from '../../public/search_icon.png';
+// import Phone from '../../public/call_icon.png';
+// import Search from '../../public/search_icon.png';
 import './Home.css';
-import {a} from 'react-router-dom';
-
+import {
+    Navbar, Nav, NavLink, NavbarBrand
+  } from 'reactstrap';
 
 
 
@@ -22,37 +23,13 @@ export class Home extends React.Component {
 
 function Banner() {
     return (
-    <div className='banner'>
-        <div className='logo'>
-            <a href='/login'>
-            <div className='logo-img'>
-                <img id='logo-pic' src={Logo} alt='bank-logo'/>
-            </div>
-            </a>
-            <a style={{'textDecoration': 'none'}}href='/login'>
-            <div className='logo-text'>
-                <label id='com-name'>Bank Pro</label>
-                <label id='com-motto'>Your #1 Partner</label>
-            </div>
-            </a>
-        </div>
-        <div className='info'>
-            <div id='phone-wrapper'>
-                <img id='phone-icon' src={Phone} alt='phone-icon'/>    
-                {/* <img id='phone-icon' src={Phone} alt='phone-icon'/>                     */}
-            </div>
-            <p id='phone-num'>(555) - 1234 5678</p>
-            <div id='search-wrapper'>
-                <img id='search-icon' src={Search} alt='search-icon'/>
-            </div>
-            <div id='login-box'>
-                <a style={{color:'#2A4456','textDecoration': 'none'}} href='/login'>Login</a>
-            </div>
-            <div id='register-box'>
-                <p id='register-text'>Join Us</p>
-            </div>
-        </div>
-    </div>
+        <Navbar style={{'background-color':'white'}}>
+        <NavbarBrand href="/" style={{color : '#3E5666', fontSize:30, fontWeight:"bold", fontStyle:'italic'}}><img id='logo-pic' src={Logo} alt='bank-logo' style={{'width':'5rem'}}/>Bank Pro</NavbarBrand>
+        <Nav>
+            <NavLink href="/login" style={{color : '#3E5666'}}>Login</NavLink>
+        </Nav>
+
+    </Navbar>
     )
 }
 

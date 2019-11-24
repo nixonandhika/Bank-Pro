@@ -7,7 +7,7 @@ import Transfer from './Component/Transfer/Transfer';
 import History from './Component/History/History';
 import Account from './Component/Account/Account';
 import Navigation from './Component/Navigation/Navigation'
-import './bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.css';
 
 
 class App extends React.Component{
