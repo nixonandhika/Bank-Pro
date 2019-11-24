@@ -16,10 +16,10 @@ Pada riwayat transaksi, pengguna dapat melihat daftar data berikut: waktu transa
 ## Screenshot
 
 ### Landing Page
-![landing-page](src/screenshot/home.png)
+![landing-page](src/screenshot/home.PNG)
 
 ### Login Page
-![login-page](src/screenshot/login.png)
+![login-page](src/screenshot/login.PNG)
 
 
 </br>
