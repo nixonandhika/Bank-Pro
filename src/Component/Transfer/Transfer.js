@@ -26,7 +26,7 @@ export class Transfer extends React.Component {
         </ser:transfer>
         </soapenv:Body>
         </soapenv:Envelope>`;
-        axios.post('http://ec2-3-83-241-5.compute-1.amazonaws.com:8080/ws-bank-1.0-SNAPSHOT/services/TransactionService',body,{
+        axios.post('http://localhost:8080/ws-bank-1.0-SNAPSHOT/services/TransactionService',body,{
             headers: {'Content-Type': 'text/xml','Access-Control-Allow-Origin': '*'}
         })
         .then((res)=>{
