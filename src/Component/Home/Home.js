@@ -24,7 +24,7 @@ export class Home extends React.Component {
 function Banner() {
     return (
         <Navbar style={{'background-color':'white'}}>
-        <NavbarBrand href="/" style={{color : '#3E5666', fontSize:30, fontWeight:"bold", fontStyle:'italic'}}><img id='logo-pic' src={Logo} alt='bank-logo' style={{'width':'5rem'}}/>Bank Pro</NavbarBrand>
+        <NavbarBrand href="/" style={{color : '#3E5666', fontSize:30, fontWeight:"bold", fontStyle:'italic', marginLeft:'5%'}}><img id='logo-pic' src={Logo} alt='bank-logo' style={{'width':'5rem', 'marginRight':'10%'}}/>Bank Pro</NavbarBrand>
         <Nav>
             <NavLink href="/login" style={{color : '#3E5666'}}>Login</NavLink>
         </Nav>
