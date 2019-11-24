@@ -137,7 +137,7 @@ img {
 #product {
     cursor: pointer;
     grid-area: b;
-    padding-left: 10%;
+    padding-left: 5%;
 }
 
 #services {
@@ -163,9 +163,18 @@ img {
 #contact {
     cursor: pointer;
     grid-area: h;
+    padding-right: 5%;
 }
 
 #homepage-pic {
     z-index: 1;
     width: 100%;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 50px;
+    margin-bottom: 0;
+    list-style: none;
 }
