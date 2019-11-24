@@ -24,7 +24,7 @@ export class History extends React.Component {
       </soapenv:Envelope>`;
       // let xml = new DOMParser();
       // xml = xml.parseFromString(body,'text/xml');
-      axios.post('http://ec2-3-83-241-5.compute-1.amazonaws.com:8080/ws-bank-1.0-SNAPSHOT/services/TransactionService',body,{
+      axios.post('http://localhost:8080/ws-bank-1.0-SNAPSHOT/services/TransactionService',body,{
         headers: {'Content-Type': 'text/xml','Access-Control-Allow-Origin': '*'}
       })
       .then((res)=>{
@@ -37,7 +37,7 @@ export class History extends React.Component {
     render (){
       return(
         <div>
-          <Table striped bordered hover responsive style={{width:'75%','border':'solid 1px','margin' : '5rem auto','text-align':'center'}}> 
+          <Table striped bordered hover responsive style={{width:'75%','border':'solid 1px','margin' : '5rem auto','textAlign':'center'}}> 
             <thead>
               <tr>
                 <th ><b>#</b></th>
