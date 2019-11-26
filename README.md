@@ -21,6 +21,14 @@ Pada riwayat transaksi, pengguna dapat melihat daftar data berikut: waktu transa
 ### Login Page
 ![login-page](src/screenshot/login.PNG)
 
+### Account Page
+![account-page](src/screenshot/account.PNG)
+
+### Transfer Page
+![transfer-page](src/screenshot/transfer.PNG)
+
+### History Page
+![history-page](src/screenshot/history.PNG)
 
 </br>
 
@@ -32,6 +40,11 @@ Pada riwayat transaksi, pengguna dapat melihat daftar data berikut: waktu transa
 </br>
 
 ## URL Deployment
-Halaman Engima: 54.163.161.180/engima
+Halaman Engima: 100.26.106.0/engima
 
-Halaman Bank Pro: 54.163.161.180:5000
+Halaman Bank Pro: 100.26.106.0:5000
+
+## Catatan Tambahan
+Di server-side, kami mengubah url localhost di kode menjadi url aws karena terdapat masalah dengan CORS. 
+
+Untuk pengaksesan aplikasi, perlu digunakan extension yang dapat enable CORS seperti CORS everywhere di Mozilla Firefox
