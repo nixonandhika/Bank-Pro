@@ -46,5 +46,8 @@ Halaman Bank Pro: 100.26.106.0:5000
 
 ## Catatan Tambahan
 Di server-side, kami mengubah url localhost di kode menjadi url aws karena terdapat masalah dengan CORS. 
-
+<br>
 Untuk pengaksesan aplikasi, perlu digunakan extension yang dapat enable CORS seperti CORS everywhere di Mozilla Firefox
+<br>
+### Hasil registrasi di engima tidak memasukkan account baru tersebut ke database ws bank sehingga perlu input manual.
+### Untuk rekening tes gunakan: 7771231231
