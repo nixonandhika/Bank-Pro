@@ -21,6 +21,9 @@ lint:
 test:
   stage: test
   script:
+    - rm -rf node_modules/
+    - rm -rf package-lock.json
+    - npm install
     - echo "test"
     - CI=true npm test
     
